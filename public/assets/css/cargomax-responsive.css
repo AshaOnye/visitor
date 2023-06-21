@@ -552,6 +552,10 @@
         display: none;
     }
 
+    .we-believe-icon img{
+        width: 140px;
+    } 
+
     .welcome-one__left {
         margin-left: 0;
         margin-right: 0;

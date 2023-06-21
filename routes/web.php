@@ -15,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 
 Route::get('/login', function () {
     return view('auth.login');
-});
+})->name('login');
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'dashboard'])->name('dashboard');
 
@@ -34,7 +34,7 @@ Route::post('/create', [App\Http\Controllers\ShipmentController::class, 'store']
 
 Route::post('/loginnow', [App\Http\Controllers\Auth\LoginController::class, 'LoginNow'])->name('auth.loginnow');
 
-Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('auth.login');
+
 
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('auth.logout');
 

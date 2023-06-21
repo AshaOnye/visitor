@@ -1128,7 +1128,7 @@ ul {
 .main-header-two__logo {
   position: relative;
   display: inline-block;
-  padding: 3.5px 0;
+  padding: 22px 0;
 }
 
 .main-header-two__right {
@@ -2937,6 +2937,7 @@ ul {
 .believe-icon{
   height: 131px;
   width: 151px;
+  display: flex;
 }
 
 .believe-icon img{
