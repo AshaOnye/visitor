@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
 Route::get('/about', function () {
     return view('about');
@@ -34,9 +34,11 @@ Route::get('/works', function () {
     return view('howitworks');
 })->name('works');
 
+
 Route::get('/login', function () {
     return view('auth.login');
-})->name('login');
+})->name('auth.login');
+
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'dashboard'])->name('dashboard');
 

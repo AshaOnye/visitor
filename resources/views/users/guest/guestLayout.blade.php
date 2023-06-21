@@ -29,7 +29,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet"
-        href="assets/libs/bootstrap/css/bootstrap.min.css" />
+        href="assets/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/libs/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/libs/animate/custom-animate.css" />
     <link rel="stylesheet" href="assets/libs/fontawesome/css/all.min.css" />
@@ -81,7 +81,7 @@
                             <div class="main-header-two__search-cart-donate-btn">
                                 <a href="#" class="main-header-two__search search-toggler icon-magnifying-glass"></a>
                                 <a href="#" class="main-header-two__cart icon-avatar mini-cart__toggler"></a>
-                                <a href="{{route('login')}}" class="donate-btn main-header-two__btn">  Get Started</a>
+                                <a href="{{route('auth.login')}}" class="donate-btn main-header-two__btn">  Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                 <ul class="main-menu__list">
                                     <li class="dropdown current">
-                                        <a href="{{route('home')}}">Home</a>
+                                        <a href="{{route('index')}}">Home</a>
                                     </li>
                                     <li class="dropdown">
                                         <a href="{{route('about')}}">About</a>
@@ -138,7 +138,7 @@
         </main>
     </div>
     </body>
-    @extends('layouts.footer')
+    @extends('users.guest.footer')
 
 
 
