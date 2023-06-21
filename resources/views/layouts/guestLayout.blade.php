@@ -70,13 +70,13 @@
                 <div class="container">
                     <div class="main-header-two__top-inner">
                         <div class="main-header-two__logo">
-                            <a href="index.php"><img src="assets/images/resources/logo-4.png" alt=""></a>
+                            <a href="index.php"><img src="assets/images/logo-3.png" alt=""></a>
                         </div>
                         <div class="main-header-two__right">
                             <ul class="list-unstyled main-header-two__top-menu">
                                 <li><a href="faq.php">FAQs</a></li>
                                 <li><span>/</span></li>
-                                <li><a href="about.php">About</a></li>
+                                <li><a href="{{route('about')}}">About</a></li>
                             </ul>
                             <div class="main-header-two__search-cart-donate-btn">
                                 <a href="#" class="main-header-two__search search-toggler icon-magnifying-glass"></a>
@@ -95,19 +95,19 @@
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                 <ul class="main-menu__list">
                                     <li class="dropdown current">
-                                        <a href="index.php">Home</a>
+                                        <a href="{{route('home')}}">Home</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="about.php">About</a>
+                                        <a href="{{route('about')}}">About</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="services.php">Services</a>
+                                        <a href="{{route('services')}}">Services</a>
 
                                     </li>
                                     <li class="dropdown">
-                                        <a href="how_it_works.php">How it Works</a>
+                                        <a href="{{route('works')}}">How it Works</a>
                                     </li>
-                                    <li><a href="contact.php">Contact us</a>
+                                    <li><a href="{{route('contact')}}">Contact us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -130,108 +130,10 @@
             <!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
            <!--Main Slider Two Start-->
-           <section class="main-slider main-slider-two">
-            <div class="swiper-container thm-swiper__slider"
-                data-swiper-options='{"slidesPerView": 1, "loop": true,
-                "effect": "fade",
-                "pagination": {
-                    "el": "#main-slider-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                },
-                "navigation": {
-                    "nextEl": "#main-slider__swiper-button-next",
-                    "prevEl": "#main-slider__swiper-button-prev"
-                },
-                "autoplay": {
-                    "delay": 5000
-                }}'>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/main-slider-2-1.jpg);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2>Reliable Freight <br> Forwarding
-                                            Services:</h2>
-                                        <p>With the right team we always provide
-                                            <br>clients with the best of our
-                                            services <br>at all times with ease.
-                                        </p>
-                                        <a href="about.html" class="thm-btn">Get
-                                            Started Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/main-slider-2-2.jpg);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2>Effective Logistics<br> Management:
-                                        </h2>
-                                        <p>Effortlessly ship it all to your
-                                            desired <br> destination with our
-                                            dependable<br> sea freight services.
-                                        </p>
-                                        <a href="about.html" class="thm-btn">Get
-                                            Started Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/main-slider-2-3.jpg);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2>Unlock your End-to-End<br> Supply
-                                            Chain Management:</h2>
-                                        <p>Take control of your logistics
-                                            seamlessly with<br> our accurate
-                                            tracking<br> system from procurement
-                                            to delivery.</p>
-                                        <a href="about.html" class="thm-btn">Get
-                                            Started Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-pagination" id="main-slider-pagination"></div>
-                <div class="main-slider__nav-two">
-                    <div class="swiper-button-prev" id="main-slider__swiper-button-next">
-                        <i class="fa fa-angle-right angle-left"></i>
-                    </div>
-                    <div class="swiper-button-next" id="main-slider__swiper-button-prev">
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </div> -->
-            </div>
-        </section>
+  
    
 
-        <main class="py-4">
+        <main class="py-4 " class="main-slider main-slider-two">
             @yield('content')
         </main>
     </div>

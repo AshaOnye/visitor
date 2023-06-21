@@ -1,8 +1,106 @@
 @extends('layouts.guestLayout')
 
 @section('content')
-<div class="container">
-    
+<div class="">
+    <section class="main-slider main-slider-two">
+        <div class="swiper-container thm-swiper__slider"
+            data-swiper-options='{"slidesPerView": 1, "loop": true,
+"effect": "fade",
+ "pagination": {
+    "el": "#main-slider-pagination",
+    "type": "bullets",
+    "clickable": true
+  },
+"navigation": {
+    "nextEl": "#main-slider__swiper-button-next",
+    "prevEl": "#main-slider__swiper-button-prev"
+},
+"autoplay": {
+    "delay": 5000
+}}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-layer"
+                        style="background-image: url(assets/images/backgrounds/main-slider-2-1.jpg);">
+                    </div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="main-slider__content">
+                                    <h2>Reliable Freight <br> Forwarding
+                                        Services:</h2>
+                                    <p>With the right team we always provide
+                                        <br>clients with the best of our
+                                        services <br>at all times with ease.
+                                    </p>
+                                    <a href="about.html" class="thm-btn">Get
+                                        Started Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-layer"
+                        style="background-image: url(assets/images/backgrounds/main-slider-2-2.jpg);">
+                    </div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="main-slider__content">
+                                    <h2>Effective Logistics<br> Management:
+                                    </h2>
+                                    <p>Effortlessly ship it all to your
+                                        desired <br> destination with our
+                                        dependable<br> sea freight services.
+                                    </p>
+                                    <a href="about.html" class="thm-btn">Get
+                                        Started Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-layer"
+                        style="background-image: url(assets/images/backgrounds/main-slider-2-3.jpg);">
+                    </div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="main-slider__content">
+                                    <h2>Unlock your End-to-End<br> Supply
+                                        Chain Management:</h2>
+                                    <p>Take control of your logistics
+                                        seamlessly with<br> our accurate
+                                        tracking<br> system from procurement
+                                        to delivery.</p>
+                                    <a href="about.html" class="thm-btn">Get
+                                        Started Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-pagination" id="main-slider-pagination"></div>
+            <div class="main-slider__nav-two">
+                <div class="swiper-button-prev" id="main-slider__swiper-button-next">
+                    <i class="fa fa-angle-right angle-left"></i>
+                </div>
+                <div class="swiper-button-next" id="main-slider__swiper-button-prev">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div> -->
+        </div>
+    </section>
 
         <!--Counter One Start-->
         <section class="counter-one">

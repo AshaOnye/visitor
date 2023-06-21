@@ -10,7 +10,7 @@
                     <div
                         class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__about footer-logo">
-                            <img src="assets/images/resources/logo2.png"
+                            <img src="assets/images/White.png"
                                 alt="">
                         </div>
 
