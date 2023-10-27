@@ -453,12 +453,15 @@ body[data-layout=horizontal] .footer {
 
 #sidebar-menu ul li a {
     display: block;
+    /* background-color: #072659; */
     padding: .625rem 1.5rem;
     color: #545a6d;
     position: relative;
-    font-size: 13px;
+    font-size: 15px;
     -webkit-transition: all .4s;
-    transition: all .4s
+    transition: all .4s;
+    border: solid 1px;
+    border-radius: 5px;
 }
 
 #sidebar-menu ul li a i {
@@ -1478,7 +1481,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .navbar-header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #556ee6;
+    background-color: #1F51A2;
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;

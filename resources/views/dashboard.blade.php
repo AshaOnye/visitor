@@ -9,7 +9,7 @@
                                 <div class="col-12">
                                     <div class="page-title-box d-sm-flex align-items-center
                                         justify-content-between">
-                                        <h4 class="mb-sm-0 font-size-18">Dashboard</h4>
+                                        <h1 class="font-size-30" style="color:#1F51A2">Welcome Back!</h1>
 
                                     </div>
                                 </div>
@@ -26,8 +26,8 @@
                                                     <div class="d-flex">
                                                         <div class="flex-grow-1">
                                                             <p class="text-muted fw-medium">
-                                                                Shipments</p>
-                                                            <h4 class="mb-0">0</h4>
+                                                                All Shipments</p>
+                                                            <h4 class="mb-0">{{count($ship)}}</h4>
                                                         </div>
 
                                                         <div class="flex-shrink-0 align-self-center">
@@ -50,7 +50,7 @@
                                                         <div class="flex-grow-1">
                                                             <p class="text-muted fw-medium">
                                                                 Pending</p>
-                                                            <h4 class="mb-0">0
+                                                            <h4 class="mb-0">{{count($ship)}}
                                                             </h4>
                                                         </div>
 
@@ -75,7 +75,7 @@
                                                     <div class="d-flex">
                                                         <div class="flex-grow-1">
                                                             <p class="text-muted fw-medium">
-                                                                Revenue</p>
+                                                                Completed</p>
                                                             <h4 class="mb-0">0</h4>
                                                         </div>
 
@@ -107,7 +107,7 @@
                                             <h4 class="card-title mb-4">Your UK Freight Address
                                             </h4>
                                             <div class="row">
-                                                <p>12 Boulevard street</p>
+                                                <p>225 Littleton Road, Salford, Manchester.</p><p>Post Code:M7 3TJ</p>
                                             </div>
                                             <p class="text-muted mb-0">Use this address as your shipping address!</p>
                                         </div>

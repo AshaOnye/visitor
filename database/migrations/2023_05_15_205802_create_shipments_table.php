@@ -15,15 +15,18 @@ class CreateShipmentsTable extends Migration
     {
         Schema::create('shipments', function (Blueprint $table) {
             $table->integer('id', true);
+            $table->integer('uid');
+            $table->string('shipid')->nullable();
+            $table->string('fullname')->nullable();
             $table->string('storename')->nullable();
-            $table->string('store_address')->nullable();
             $table->longtext('tracking_number')->nullable();
-            $table->float('courier')->nullable();
+            $table->string('order_number')->nullable();
             $table->datetime('package_from')->nullable();
             $table->datetime('package_to')->nullable();
             $table->longtext('upload')->nullable();
             $table->string('package_descp')->nullable();
             $table->string('delivery_option')->nullable();
+            $table->datetime('datetime')->nullable();
         });
     }
 

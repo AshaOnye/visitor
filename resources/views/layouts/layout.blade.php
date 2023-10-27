@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <title>CargoMax | Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template"
+    <meta content="Cargo shipping and Logistics"
         name="description" />
     <meta content="Themesbrand" name="author" />
     <meta name="_token" content="{{csrf_token()}}" />
@@ -38,13 +38,13 @@
                     <!-- LOGO -->
                     <div class="navbar-brand-box" style="background: #072659">
                         <a href="{{route('dashboard')}}" class="logo logo-dark">
-                            <span class="logo-sm">
-                                <img src="/assets/images/logo2.png" alt=""
-                                    height="22">
+                            <span class="logo-sm" style="padding:20px">
+                                <img src="/assets/images/logo3.png" alt=""
+                                    height="35">
                             </span>
-                            <span class="logo-lg">
-                                <img src="/assets/images/logo2.png" alt=""
-                                    height="17">
+                            <span class="logo-lg" style="padding:20px">
+                                <img src="/assets/images/logo3.png" alt=""
+                                    height="27">
                             </span>
                         </a>
 
@@ -63,9 +63,15 @@
 
                     <button type="button"
                         class="btn btn-sm px-3 font-size-16 header-item waves-effect"
-                        id="vertical-menu-btn">
+                        id="vertical-menu-btn" style="margin-top:15px">
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
+                    <form class="app-search d-none d-lg-block" style="margin-top:17px">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="bx bx-search-alt"></span>
+                            </div>
+                        </form>
 
 
 
@@ -111,17 +117,6 @@
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1" key="t-your-order">
                                                 Your order is placed</h6>
-                                            <div
-                                                class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-grammer">
-                                                    If several languages
-                                                    coalesce the grammar</p>
-                                                <p class="mb-0"><i
-                                                        class="mdi mdi-clock-outline"></i>
-                                                    <span key="t-min-ago">3 min
-                                                        ago</span>
-                                                </p>
-                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -170,7 +165,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu" style="background: #072659">
+        <div class="vertical-menu" style="background-image: linear-gradient(to bottom, #072659, #364b80, #5e74a9, #889fd3, #b3cdff);">
 
             <div data-simplebar class="h-100">
 
@@ -180,7 +175,7 @@
                     <ul class="metismenu list-unstyled" id="side-menu">
                         <li class="menu-title" key="t-menu">Menu</li>
 
-                        <li>
+                        <li style="padding:10px;">
                             <a href="{{route('dashboard')}}"
                                 class="waves-effect {{ (request()->is('dashboard')) ? 'active' : '' }}">
                                 <i class="bx bx-home-circle"></i>
@@ -202,20 +197,20 @@
                                         Shipment</a></li>
                             </ul>
                         </li> -->
-                        <li>
-                            <a href="{{ route('shipment.index') }}"
-                                class="waves-effect {{ (request()->is('shipment.index')) ? 'active' : '' }}">
+                        <li style="padding:10px;">
+                            <a href="{{ route('shipment.create') }}"
+                                class="waves-effect {{ (request()->is('shipment.create')) ? 'active' : '' }}">
                                 <i class="bx bx-receipt"></i>
                                 <span key="t-chat">Shipments</span>
                             </a>
                         </li>
-                        <!-- <li>
-                            <a href="{{ route('history') }}"
-                                class="waves-effect">
+                        <li style="padding:10px;">
+                            <a href="{{ route('shipment.index') }}"
+                                class="waves-effect {{ (request()->is('shipment.index')) ? 'active' : '' }}">
                                 <i class="bx bx-chat"></i>
                                 <span key="t-chat">History</span>
                             </a>
-                        </li> -->
+                        </li>
 
                     </ul>
                 </div>
@@ -269,57 +264,7 @@
             </div>
 
             <!-- Settings -->
-            <hr class="mt-0" />
-            <h6 class="text-center mb-0">Choose Layouts</h6>
-
-            <div class="p-4">
-                <div class="mb-2">
-                    <img src="/assets/images/layouts/layout-1.jpg"
-                        class="img-thumbnail" alt="layout images">
-                </div>
-
-                <div class="form-check form-switch mb-3">
-                    <input class="form-check-input theme-choice" type="checkbox"
-                        id="light-mode-switch" checked>
-                    <label class="form-check-label"
-                        for="light-mode-switch">Light Mode</label>
-                </div>
-
-                <div class="mb-2">
-                    <img src="/assets/images/layouts/layout-2.jpg"
-                        class="img-thumbnail" alt="layout images">
-                </div>
-                <div class="form-check form-switch mb-3">
-                    <input class="form-check-input theme-choice" type="checkbox"
-                        id="dark-mode-switch">
-                    <label class="form-check-label" for="dark-mode-switch">Dark
-                        Mode</label>
-                </div>
-
-                <div class="mb-2">
-                    <img src="/assets/images/layouts/layout-3.jpg"
-                        class="img-thumbnail" alt="layout images">
-                </div>
-                <div class="form-check form-switch mb-3">
-                    <input class="form-check-input theme-choice" type="checkbox"
-                        id="rtl-mode-switch">
-                    <label class="form-check-label" for="rtl-mode-switch">RTL
-                        Mode</label>
-                </div>
-
-                <div class="mb-2">
-                    <img src="/assets/images/layouts/layout-4.jpg"
-                        class="img-thumbnail" alt="layout images">
-                </div>
-                <div class="form-check form-switch mb-5">
-                    <input class="form-check-input theme-choice" type="checkbox"
-                        id="dark-rtl-mode-switch">
-                    <label class="form-check-label"
-                        for="dark-rtl-mode-switch">Dark RTL Mode</label>
-                </div>
-
-
-            </div>
+            
 
         </div> <!-- end slimscroll-menu-->
     </div>
@@ -338,7 +283,5 @@
     <script src="/assets/js/app.js"></script>
 
 </body>
-
-<!-- Mirrored from themesbrand.com/skote/layouts/pages-starter.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jun 2022 19:33:16 GMT -->
 
 </html>

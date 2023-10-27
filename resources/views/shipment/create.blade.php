@@ -30,48 +30,48 @@
                     @csrf
                     <div class="row">
                         <div class="col-md-6 col-sm-6 mb-3">
-                            <label class="form-label">Online Store Name</label>
-                            <input type="text" name="storename"
+                            <label class="form-label">Full Name(please provide the name used to place your online order)</label>
+                            <input type="text" name="fullname"
                                 class="form-control" required
-                                placeholder="enter store name" />
+                                placeholder="enter full name" />
                         </div>
                         <div class=" col-md-6 col-sm-6  mb-3">
                             <label class="form-label">Online Store
-                                Address</label>
+                                Name</label>
                             <input type="text" class="form-control"
-                                name="store_address" required
-                                placeholder="enter store address" />
+                                name="storename" required
+                                placeholder="enter store name" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 mb-3">
-                            <label class="form-label">Tracking Number</label>
+                            <label class="form-label">Tracking Number of item</label>
                             <input type="text" name="tracking_number"
                                 class="form-control" required
                                 placeholder="tracking number" />
                         </div>
                         <div class="col-md-6 col-sm-6 mb-3">
-                            <label class="form-label">Courier</label>
-                            <input type="text" name="courier"
+                            <label class="form-label">Order Number(id) of item</label>
+                            <input type="text" name="order_number"
                                 class="form-control" required
-                                placeholder="enter courier" />
+                                placeholder="enter order id" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 mb-3">
-                            <label class="form-label">Package ETA(from)</label>
+                            <label class="form-label">Package Expected Time of Arrival(from)</label>
                             <input type="date" name="package_from"
                                 class="form-control" required />
                         </div>
                         <div class="col-md-6 col-sm-6 mb-3">
-                            <label class="form-label">Package ETA(to)</label>
+                            <label class="form-label">Package Expected Time of Arrival(to)</label>
                             <input type="date" name="package_to"
                                 class="form-control" required />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 mb-3">
-                            <label class="form-label">Upload Receipt</label>
+                            <label class="form-label">Upload Receipt (or upload screenshot of evidence of placed order)</label>
                             <input type="file" name="upload"
                                 onChange="readURL(this);" class="form-control"
                                 name="data" accept="image/jpeg">

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Shipments;
+use Auth;
 
 class DashboardController extends Controller
 {
@@ -21,7 +23,10 @@ class DashboardController extends Controller
     
     public function dashboard()
     {
-        return view('dashboard');
+        $ship = shipments::where('uid',Auth::user()->id)->get();
+        return view('dashboard',['ship'=>$ship]);
     }
+
+    
 
 }

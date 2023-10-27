@@ -31,10 +31,10 @@ class ShipmentController extends Controller
         $shipment = new shipments();
         $shipment->uid = Auth::user()->id;
         $shipment->shipid = $rad;
+        $shipment->fullname = request('fullname');
         $shipment->storename = request('storename');
-        $shipment->store_address = request('store_address');
         $shipment->tracking_number = request('tracking_number');
-        $shipment->courier = request('courier');
+        $shipment->order_number = request('order_number');
         $shipment->package_from = request('package_from');
         $shipment->package_to = request('package_to');
         $shipment->upload = request('upload');
