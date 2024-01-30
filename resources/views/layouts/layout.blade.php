@@ -11,7 +11,7 @@
     <meta content="Themesbrand" name="author" />
     <meta name="_token" content="{{csrf_token()}}" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="/assets/images/favicon.png">
+    <link rel="shortcut icon" href="/assets/images/favicon2.png">
 
     <!-- Bootstrap Css -->
     <link href="/assets/css/bootstrap.min.css" id="bootstrap-style"
@@ -55,8 +55,8 @@
                                     height="22" style>
                             </span>
                             <span class="logo-lg">
-                                <img src="/assets/images/logo2.png" alt=""
-                                    height="55">
+                                <img src="/assets/images/favicon2.png" alt=""
+                                    height="55" width="50px">
                             </span>
                         </a>
                     </div>
@@ -139,7 +139,7 @@
                             data-bs-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <img class="rounded-circle header-profile-user"
-                                src="/assets/images/users/avatar-1.jpg"
+                                src="/assets/images/users/favicon2.png"
                                 alt="Header Avatar">
                             <span class="d-none d-xl-inline-block ms-1"
                                 key="t-henry">{{Auth::user()->name}}</span>
